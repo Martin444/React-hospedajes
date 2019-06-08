@@ -16,7 +16,7 @@ function App() {
     <Navbar/>
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/Habitaciones/" component={Rooms}/>
+      <Route exact path="/Mihabitacion/" component={Rooms}/>
       <Route exact path="/Habitaciones/:slug" component={SingleRoom}/>
       <Route component={Error}/>
     </Switch>

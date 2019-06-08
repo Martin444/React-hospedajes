@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import RoomContainer from '../Component/RoomContainer'
 import Hero from '../Component/Hero'
 
 import {Link} from 'react-router-dom'
@@ -11,7 +12,8 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <Hero>
+                <RoomContainer/>
+                {/* <Hero>
                     <Banner title="Las mejores habitaciónes" subtitle="Precios super bajos">
                         <Link to='/Habitaciones' className="btn-primary">
                             Buscar habitación
@@ -19,7 +21,7 @@ export default class Home extends Component {
                     </Banner>
                 </Hero>
                 <Services/>
-                <FeaturedRooms/>
+                <FeaturedRooms/> */}
             </div>
         )
     }

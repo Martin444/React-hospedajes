@@ -38,7 +38,7 @@ export default class SingleRoom extends Component {
             </div>
         }
 
-        const {name,description,capacity,size,price,extras,breakfast,pets,images} = room
+        const {name,description,capacity,size,price,extras,breakfast,pets,images,direcNumber} = room
         const [mainImg,...defaultImg] = images
 
         return (
@@ -46,7 +46,7 @@ export default class SingleRoom extends Component {
         <>
             <StyledHero img={mainImg ||  this.state.defaultBcg}>
                 <Banner title={`${name}`}>
-                    <Link to='/Habitaciones' className="btn-primary">
+                    <Link to='/' className="btn-primary">
                         Volver
                     </Link>
                 </Banner>
@@ -71,6 +71,7 @@ export default class SingleRoom extends Component {
                         <h6>{pets? "Se aceptan mascotas" : "No se aceptan mascotas"}</h6>
                         <h6>{breakfast && "Desayuno gratis"}</h6>
                     </article>
+                    <a href={direcNumber} className="btn btn-primary" style={{textAlign: "center"}}>Contacto directo</a>
                 </div>
             </section>
             <section className="room-extras">
@@ -80,6 +81,7 @@ export default class SingleRoom extends Component {
                         return <li key={index}>- {item}</li>
                     })}
                 </ul>
+
             </section>
         </>
         )

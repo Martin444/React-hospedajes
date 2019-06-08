@@ -42,7 +42,7 @@ export default function RoomsFilter({rooms}) {
             <form className="filter-form">
                 {/* Selector */}
                 <div className="form-group">
-                    <label htmlFor="type">Tipo</label>
+                    <label htmlFor="type">Ciudad</label>
                     <select name="type" id="type" value={type} className="form-control" onChange={handleChange}>
                         {
                             types
@@ -52,7 +52,7 @@ export default function RoomsFilter({rooms}) {
                 {/* Fin selector */}
                 {/* Capacidad */}
                 <div className="form-group">
-                    <label htmlFor="capacity">Capacidad</label>
+                    <label htmlFor="capacity">Personas limite</label>
                     <select name="capacity" id="capacity" value={capacity} className="form-control" onChange={handleChange}>
                         {
                             people
